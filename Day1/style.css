@@ -8,11 +8,11 @@
   margin-left: -200px;
   border-radius: 2px;
   box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
-  background: #43389f;
-  background: -webkit-linear-gradient(bottom left, #43389f 0%, #4ec6ca 100%);
-  background: -moz-linear-gradient(bottom left, #43389f 0%, #4ec6ca 100%);
-  background: -o-linear-gradient(bottom left, #43389f 0%, #4ec6ca 100%);
-  background: linear-gradient(to top right, #43389f 0%, #4ec6ca 100%);
+  background: #4f4d63;
+  background: -webkit-linear-gradient(bottom left, #000 50%, #4ec6ca 50%);
+  background: -moz-linear-gradient(bottom left, #0000 0%, #aa14f0 100%);
+  background: -o-linear-gradient(bottom left, #0000 100%, #aa14f0 100%);
+  background: linear-gradient(to top right, #0000 0%, #4ec6ca 80%);
   /*filter: progid:DXImageTransforme.Microsoft.gradient( startColorstr='#43489f', endColorstr='#4ec6ca', GradientType=1;*/
   font-family: 'Courier New', Courier, monospace;
   color: #fff;
