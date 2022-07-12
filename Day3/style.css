@@ -64,7 +64,79 @@
 
 @keyframes sky-turns-black {
   0% {
-    background: fixed;
+    background: #272c34;
+  }
+
+  30% {
+    background: #7ddffc;
+  }
+
+  70% {
+    background: #7ddffc;
+  }
+
+  100% {
+    background: #272c34;
   }
 }
 
+@keyframes pyramide-shading {
+  0% {
+    background: #272c34;
+  }
+
+  30% {
+    background: #f4f4f4;
+  }
+
+  70% {
+    background: #dddada;
+  }
+
+  100% {
+    background: #272c34;
+  }
+}
+
+@keyframes shadow-on-the-floor {
+  0% {
+    transform: scaleY(0);
+    clip-path: polygon(115px 0%, 231px 0%, 100% 100%);
+  }
+
+  30% {
+    transform: scaleY(1);
+    clip-path: polygon(115px 0%, 231px 0%, 80% 100%);
+  }
+
+  70% {
+    transform: scaleY(.4);
+  }
+
+  75% {
+    transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleY(0);
+    clip-path: polygon(115px 0%, 231px 0%, 0% 100%);;
+  }
+}
+
+@keyframes fading-sand {
+  0% {
+    background: #272c34;
+  }
+
+  30% {
+    background: #f0de75;
+  }
+
+  70% {
+    background: #f0de75;
+  }
+
+  100% {
+    background: #272c34;
+  }
+}
