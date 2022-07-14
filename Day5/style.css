@@ -26,10 +26,10 @@
         background: #fff;
         border-radius: 5px;
         box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.3);
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
 
-    .header {
+    .card .header {
         position: relative;
         height: 60px;
         width: 100px;
@@ -37,45 +37,45 @@
         color: #fff;        
     }
 
-    .big {
+    .card .header .big {
         position: absolute;
         font-weight: 600;
         font-size: 14px;
         text-transform: uppercase;
     }
 
-    .small {
+    .card .header .small {
         position: absolute;
         font-weight: 400;
         font-size: 11px;
     }
 
-    .title {
+    .card .header .title {
         top: 12px;
         left: 15px;
     }
 
-    .date {
+    .card .header .date {
         top: 30px;
         left: 15px;
     }
 
-    .type {
+    .card .header .type {
         top: 14px;
         right: 15px;
     }
 
-    .value {
+    .card .header .value {
         top: 28px;
         right: 15px;
     }
 
-    .parameter {
+    .card .parameter {
         text-align: right;
         padding: 10px 0 14px 0;
     }
 
-    span {
+    .card .parameter span {
         position: relative;
         font-size: 9px;
         color:#606060;
@@ -83,8 +83,8 @@
         padding: 0 10px 0 25px;
     }
 
-    span::before {
-        position: absolute;
+    .card .parameter span::before {
+        position: absolute /*relative*/;
         left: 6px;
         top: 6px;
         display: block;
@@ -94,45 +94,113 @@
         border-radius: 5px;
     }
 
-    .red::before {
+    .card .parameter .red::before {
         background: red;
     }
 
-    .blue::before {
+    .card .parameter .blue::before {
         background: blue;
     }
 
-    .statistcs {
+    .card .statistcs {
         position: relative;
         height: 81px;
         width: 260px;
         margin: 0 auto;
     }
 
-    .line-1 {
+    .card .statistcs .line-1, .card .statistcs .line-2, .card .statistcs .line-3 {
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         height: 1px;
         background: #f2f2f2;
+
     }
 
-    .line-2 {
-        position: absolute;
-        top: 40;
-        left: 0;
-        right: 0;
-        height: 1px;
-        background: #f2f2f2;
+    .card .statistcs .line-2 {        
+        top: 40px;
     }
-
-    .line-3 {
-        position: absolute;
+    
+    .card .statistcs .line-3 {        
         top: inherit;
+        bottom: 0;
+    }
+
+    .card .statistcs .data svg {
+        position: absolute;
+        top: 0;
         left: 0;
         right: 0;
-        height: 1px;
         bottom: 0;
-        background: #797171;
     }
+
+    .card .statistcs .data polyline {
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+    }
+
+    .card .statistcs .red polyline {
+        stroke: red;
+    }
+
+    .card .statistcs .blue polyline {
+        stroke: blue;
+    }
+
+    .card .statistcs .data .tooltip {
+        position: absolute;
+        bottom: 13px;
+        left: 50%;
+        -webkit-transform: translate(-50%, 10px, 0);
+        -webkit-transform: translate(-50%, 10px, 0);
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 11px;
+        color: #fff;
+        padding: 8px 6px;
+        border-radius: 4px;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity 0.4s ease-out 0s,  -webkit-transform 0.4s ease-out 0s;
+        transition: opacity 0.4s ease-out 0s, -webkit-transform 0.4s ease-out 0s;
+        transition: transform 0.4s ease-out 0s, opacity 0.4s ease-out 0s;
+        transition: transform 0.4s ease-out 0s, opacity 0.4s ease-out 0s, -webkit-transform 0.4s ease-out 0s;
+    }
+
+    .card .statistcs .data .tooltip::after {
+        position: absolute;
+        display: block;
+        content: '';
+        height: 6px;
+        width: 6px;
+        left: 50%;
+        margin-left: -3px;
+        bottom: -3px;
+        -webkit-transform: rotate(45deg);
+    }
+
+    .card .statistcs .data .tooltip:hover {
+        visibility: visible;
+        opacity: 1;
+        transform: translate3d(-50%, 0, 0);
+    }
+
+
+    .points {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 6px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .points points-1 {
+        left: 7px;
+        top: 43px;
+    }
+
+
