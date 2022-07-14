@@ -13,7 +13,7 @@
     background: #000000e5;
     background: -webkit-linear-gradient(bottom left, #150050 0%, #000000b7 100% );
     background: linear-gradient(to top right, #150050 0%, #000000 100%);
-    filter: prodig:DXImageTransform.Microsoft.gradient(startColorstr='#150050', endColorstr='#000000', GradientType=1);
+    /*filter: prodig:DXImageTransform.Microsoft.gradient(startColorstr='#150050', endColorstr='#000000', GradientType=1);*/
     color: #fff;
     font-family: 'Open Sans', Helvetica, Sans-Serif;
     -webkit-font-smoothing: antialiased;
