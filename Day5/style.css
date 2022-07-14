@@ -26,7 +26,7 @@
         background: #fff;
         border-radius: 5px;
         box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.3);
-        /*overflow: hidden;*/
+        overflow: hidden;
     }
 
     .card .header {
@@ -182,25 +182,101 @@
         -webkit-transform: rotate(45deg);
     }
 
-    .card .statistcs .data .tooltip:hover {
-        visibility: visible;
-        opacity: 1;
-        transform: translate3d(-50%, 0, 0);
-    }
-
-
-    .points {
+    .card .statistcs .data [class^="points-"] {
         position: absolute;
         width: 6px;
         height: 6px;
-        border-radius: 6px;
+        border-radius: 3px;
         cursor: pointer;
         z-index: 10;
     }
 
-    .points points-1 {
+    .card .statistcs .data [class^="points-"]:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: translate3d(-50%, 0, 0);
+    }
+
+    .card .statistcs .data.red [class^="points-"], .card .statistcs .data.red .tooltip, .card .statistcs .data.red .tooltip::after {
+        background: red;
+    } 
+
+    .card .statistcs .data.red .points-1 {
         left: 7px;
         top: 43px;
     }
+
+    .card .statistcs .data.red .points-2 {
+        left: 48px;
+        top:  9px;
+    }
+
+    .card .statistcs .data.red .points-3 {
+        left: 88px;
+        top:  20px;
+    }
+
+    .card .statistcs .data.red .points-4 {
+        left: 128px;
+        top:  8px;
+    }
+
+    .card .statistcs .data.red .points-5 {
+        left: 169px;
+        top:  35px;
+    }
+
+    .card .statistcs .data.red .points-6 {
+        left: 209px;
+        top:  45px;
+    }
+
+    .card .statistcs .data.red .points-7 {
+        left: 249px;
+        top: 16px;
+    }
+
+    .card .statistcs .data.blue [class^="points-"], .card .statistcs .data.blue .tooltip, .card .statistcs .data.blue .tooltip::after {
+        background: blue;
+    } 
+
+    .card .statistcs .data.blue .points-1 {
+        left: 7px;
+        top: 58px;
+    }
+
+    .card .statistcs .data.blue .points-2 {
+        left: 48px;
+        top: 47px;
+    }
+
+    .card .statistcs .data.blue .points-3 {
+        left: 88px;
+        top:  62px;
+    }
+
+    .card .statistcs .data.blue .points-4 {
+        left: 128px;
+        top: 52px;
+    }
+
+    .card .statistcs .data.blue .points-5 {
+        left: 169px;
+        top: 58px;
+    }
+
+    .card .statistcs .data.blue .points-6 {
+        left: 209px;
+        top:  71px;
+    }
+
+    .card .statistcs .data.blue .points-7 {
+        left: 249px;
+        top: 61px;
+    }
+
+
+
+
 
 
