@@ -17,7 +17,7 @@
     -moz-osx-font-smoothing: grayscale;
     }
 
-    .card {
+.card {
         position: absolute;
         top: 90px;
         left: 60px;
@@ -29,53 +29,53 @@
         overflow: hidden;
     }
 
-    .card .header {
+.card .header {
         position: relative;
         height: 60px;
-        width: 100px;
+        width: 100%;
         background: #f1ba64;
         color: #fff;        
     }
 
-    .card .header .big {
+.card .header .big {
         position: absolute;
         font-weight: 600;
         font-size: 14px;
         text-transform: uppercase;
     }
 
-    .card .header .small {
+.card .header .small {
         position: absolute;
         font-weight: 400;
         font-size: 11px;
     }
 
-    .card .header .title {
+.card .header .title {
         top: 12px;
         left: 15px;
     }
 
-    .card .header .date {
+.card .header .date {
         top: 30px;
         left: 15px;
     }
 
-    .card .header .type {
+.card .header .type {
         top: 14px;
         right: 15px;
     }
 
-    .card .header .value {
+.card .header .value {
         top: 28px;
         right: 15px;
     }
 
-    .card .parameter {
+.card .parameter {
         text-align: right;
         padding: 10px 0 14px 0;
     }
 
-    .card .parameter span {
+.card .parameter span {
         position: relative;
         font-size: 9px;
         color:#606060;
@@ -83,7 +83,7 @@
         padding: 0 10px 0 25px;
     }
 
-    .card .parameter span::before {
+.card .parameter span::before {
         position: absolute /*relative*/;
         left: 6px;
         top: 6px;
@@ -94,22 +94,22 @@
         border-radius: 5px;
     }
 
-    .card .parameter .red::before {
+.card .parameter .red::before {
         background: red;
     }
 
-    .card .parameter .blue::before {
+.card .parameter .blue::before {
         background: blue;
     }
 
-    .card .statistcs {
+.card .statistcs {
         position: relative;
         height: 81px;
         width: 260px;
         margin: 0 auto;
     }
 
-    .card .statistcs .line-1, .card .statistcs .line-2, .card .statistcs .line-3 {
+.card .statistcs .line-1, .card .statistcs .line-2, .card .statistcs .line-3 {
         position: absolute;
         top: 0;
         left: 0;
@@ -119,11 +119,11 @@
 
     }
 
-    .card .statistcs .line-2 {        
+.card .statistcs .line-2 {        
         top: 40px;
     }
     
-    .card .statistcs .line-3 {        
+.card .statistcs .line-3 {        
         top: inherit;
         bottom: 0;
     }
@@ -275,6 +275,22 @@
         top: 61px;
     }
 
+    .card .days {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .card .days .day {
+        display: block;
+        float: left;
+        width: 14.28571%;
+        font-size: 9px;
+        color: gray;
+        line-height: 8px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+    }
 
 
 
