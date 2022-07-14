@@ -81,10 +81,12 @@
 
 .profile .image:hover .circle-1, .profile .image:hover .circle-2 {
     -webkit-transform: rotate(360deg);
+    animation: rotate-one 1.5s ease-in-out linear infinite;
 }
 
 .profile .image:hover .circle-2 {
     -webkit-transform: rotate(-360deg);
+    animation: rotate-two 1.5s ease-in-out linear infinite;
 }
 
 .profile .name {
@@ -161,3 +163,24 @@
     font-size: 11px;
 }
 
+/*Rotate Variables*/
+
+@keyframes rotate-one {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-two {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
