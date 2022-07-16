@@ -33,14 +33,14 @@
     transition: all .5s ease-in-out;
 }
 
-.panel .show-menu {
+.panel.show-menu {
     -webkit-transform: translate3d(150px, 0, 0);    
     transform: translate3d(150px, 0, 0);    
 }
 
 .panel .header {
     height: 60px;
-    width: 100px;
+    width: 100%;
     background: #FAC213;
 }
 
@@ -121,7 +121,7 @@
     outline: none;
 }
 
-.panel .header .search-input.active {
+.panel .header .search-input .active {
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
     opacity: 1;
@@ -140,7 +140,7 @@
     cursor: pointer;
 }
 
-.panel .header .search-icon:hover {
+.panel .header .search-icon::hover {
     color: #fff;
 }
 
