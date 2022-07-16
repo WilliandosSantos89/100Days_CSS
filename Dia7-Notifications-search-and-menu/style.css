@@ -33,8 +33,9 @@
     transition: all .5s ease-in-out;
 }
 
-.panel.show-menu {
+.panel .show-menu {
     -webkit-transform: translate3d(150px, 0, 0);    
+    transform: translate3d(150px, 0, 0);    
 }
 
 .panel .header {
@@ -135,6 +136,7 @@
     top: 18px;
     right: 20px;
     -webkit-transition: all .3s ease;
+    transition: all .3s ease;
     cursor: pointer;
 }
 
@@ -202,9 +204,80 @@
     left: -20px;
 }
 
+.panel .notifications .notification .time {
+    display: block;
+    font-size: 11px;
+    line-height: 11px;
+    margin-bottom: 2px;
+}
+
+.panel .notifications .notification p {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.panel .notifications .notification p b {
+    font-weight: 600;
+}
+
+.menu {
+    position: absolute;
+    width: 170px;
+    height: 270px;
+    top: 65px;
+    left: 50px;
+    background: #FEF9A7;
+    color:#000000;
+    font-weight: 600;
+    border-radius: 6px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0);
+}
+
+.menu.active {
+    box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.menu ul {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.menu li {
+    color: #000000;
+    margin: 0;
+    padding: 18px 17px;
+    list-style: none;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.menu li:hover {
+    color: #D61C4E;
+    background-color: rgb(20, 19, 19);
+}
+
+.menu li span {
+    display: block;
+    float: left;
+    margin-right: 8px;
+    margin-top: -1px;
+}
+
+.menu li .fa-gear, .menu li .fa-user, .menu li .fa-bell, .menu li .comments  {
+    margin-top: 0;
+}
+
 /*Variables animations*/
 
-@-webkit-keyframes here-am-i {
+@keyframes here-am-i {
     from {
         -webkit-transform: translate3d(0,50px,0);
         transform: translate3d(0,50px,0);
@@ -218,7 +291,7 @@
     }
 }
 
-@-webkit-keyframes here-am-i {
+@keyframes here-am-i {
     from {
         -webkit-transform: translate3d(0,50px,0);
         transform: translate3d(0,50px,0);
